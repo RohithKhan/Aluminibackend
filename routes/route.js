@@ -7,7 +7,7 @@ const router = Router();
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
-router.post("/add", addAluminis);
+router.post("/adds", addAluminis);
 router.get("/find", findAluminis);
 router.post("/addAward", upload.fields([
     { name: "photo", maxCount: 1 },

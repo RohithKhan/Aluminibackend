@@ -10,8 +10,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(cors({ origin: "*", methods: ["GET", "POST", "PUT", "DELETE"] }));
 
 mongoose.connect(
-    // "mongodb://localhost:27017/test"
-    "mongodb+srv://Venki_20ss:Venki_1505@alumni.b5ck8.mongodb.net/Alumni"
+    "mongodb://localhost:27017/alumni"
 );
 
 mongoose.connection.on("connected", () => {
